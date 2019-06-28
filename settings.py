@@ -13,9 +13,9 @@ def md5_hash_sum (url):
        return e
     hash_sum = hashlib.md5()
     #Используем метод iter_content, так как мы не знаем насколько большие файлы нам были переданы в Url
-    for chunk in res.iter_content (chunk_size = 1000000):
-        if chunk:
-            hash_sum.update (chunk)
+    for i in res.iter_content (chunk_size = 1000000):
+        if i:
+            hash_sum.update (i)
     return hash_sum.hexdigest ()
 
 smtp_server = "smpt.yandex.ru"
