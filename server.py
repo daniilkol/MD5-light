@@ -4,6 +4,7 @@ import subprocess
 
 app = Flask(__name__)
 
+
 def check_json(id):
     try:
         with open(id + ".json") as ouf:
