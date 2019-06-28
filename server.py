@@ -26,9 +26,9 @@ def create_task ():
     id = str (uuid.uuid4 ())
     try:
         email = request.form ['email']
-        subprocess.Popen (["python", "application.py", str(id), str(url), str(email)])
+        subprocess.Popen (["python3", "application.py", str(id), str(url), str(email)])
     except:
-        subprocess.Popen (["python", "application.py", str(id), str(url)])
+        subprocess.Popen (["python3", "application.py", str(id), str(url)])
     return jsonify ({'id' : id})
 
 @app.route('/check', methods=['GET'])
