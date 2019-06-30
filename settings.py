@@ -24,7 +24,7 @@ smtp_server = "smtp.yandex.ru"
 smtp_port = 25
 # Данные для авторизации (можно вставить свою почту и пароль)
 smtp_email = "dankol@yandex.ru"
-smpt_password = "102030"
+smtp_password = "102030"
 
 
 # Функция для отправки email'а по адресу из нашего POST'а
